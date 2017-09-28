@@ -1,8 +1,8 @@
 #!/bin/bash
 set -e
 
-cd ../plugin
+cd ../ma-kong-plugin
 ./config_all_api.sh
-cd ../client-demo
+cd ../ma-client-demo
 ./register_client.sh
 

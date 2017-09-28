@@ -2,13 +2,13 @@
 
 set -e
 
-cd ../client-libs/libaes
+cd ../ma-client-libs/libaes
 make
 cd ../kerberos
 make
-cp ./lib/libaes.so ../../client-demo/lib
+cp ./lib/libaes.so ../../ma-client-demo/lib
 cd ..
-mv libkerberos.so ../client-demo/lib
-cd ../client-demo
+mv libkerberos.so ../ma-client-demo/lib
+cd ../ma-client-demo
 make
 
